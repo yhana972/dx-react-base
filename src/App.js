@@ -1,12 +1,17 @@
 import './App.css';
-import './Potato';
-import Potato from './Potato';
+
+function Food({favourite}){
+  return <h1>I like {favourite}</h1>;
+}
 
 function App() {
   return (
     <div className="App">
       <div>Hello!</div>
-      <Potato/>
+      <Food favourite="kimchi"/>
+      <Food favourite="bap"/>
+      <Food favourite="ramen"/>
+      <Food favourite="candy"/>
     </div>
   );
 }
